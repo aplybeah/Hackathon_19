@@ -1,3 +1,9 @@
 {%extends 'base.html'%} {%block content%}
 <h1>Search form here</h1>
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="text" placeholder="Search Here" />
+  <button type="submit">Save</button>
+</form>
 {%endblock%}
