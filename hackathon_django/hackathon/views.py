@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from .forms import SearchForm
 
 # Create your views here.
 def homepage(request):

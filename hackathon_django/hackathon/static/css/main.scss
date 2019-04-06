@@ -5,12 +5,15 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   //   min-height: 100vh;
 }
 header {
   background-color: $black-adjacent;
   color: $primary-color;
   padding-bottom: 40px;
+  width: 100%;
   //   font-size: 28px;
 }
 .nav-content {
@@ -31,4 +34,5 @@ footer {
   margin-top: 565px;
   background-color: $black-adjacent;
   color: $primary-color;
+  width: 100%;
 }
