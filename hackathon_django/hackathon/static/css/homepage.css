@@ -10,6 +10,13 @@ a.button {
 }
 
 p.home {
-  width: 300px;
+  width: 650px;
+  height: 650;
+  word-wrap: break-word;
+}
+
+.homepage-text {
+  text-align: center;
+  margin-top: 200px;
 }
 /*# sourceMappingURL=homepage.css.map */

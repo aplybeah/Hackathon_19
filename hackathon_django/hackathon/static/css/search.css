@@ -10,4 +10,19 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.input-field {
+  background-color: white;
+}
+
+button {
+  border: 1px solid black;
+  background-color: #f2aa24;
+  border-radius: 6px;
+  width: 150px;
+  height: 70px;
+  font-size: 18px;
+  color: white;
+  margin-left: 100px;
+}
 /*# sourceMappingURL=search.css.map */

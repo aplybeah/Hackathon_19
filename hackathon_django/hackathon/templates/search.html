@@ -1,33 +1,35 @@
 {%extends 'base.html'%} {%block content%}
 <h4>Search:</h4>
-<form method="POST">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <label
-    >Keyword/Solicitation #:
-    <input type="text" placeholder="Search Here" name="keyword" />
-  </label>
-  <label
-    >Posted Date: <input list="date" id="post_date" name="post_date" />
-  </label>
-  <label
-    >Set Aside:
-    <input list="set_aside_list" id="set_aside" name="set_aside" />
-  </label>
-  <label
-    >NAICS:
-    <input list="set_aside_list" id="set_aside" name="set_aside" />
-  </label>
-  <label
-    >Classification Code:
-    <input list="set_aside_list" id="set_aside" name="set_aside" />
-  </label>
-  <label
-    >Notice Type:
-    <input list="set_aside_list" id="set_aside" name="set_aside" />
-  </label>
-  <button type="submit">Save</button>
-</form>
+<div class="input-field">
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <label
+      >Keyword/Solicitation #:
+      <input type="text" placeholder="Search Here" name="keyword" />
+    </label>
+    <label
+      >Posted Date: <input list="date" id="post_date" name="post_date" />
+    </label>
+    <label
+      >Set Aside:
+      <input list="set_aside_list" id="set_aside" name="set_aside" />
+    </label>
+    <label
+      >NAICS:
+      <input list="set_aside_list" id="set_aside" name="set_aside" />
+    </label>
+    <label
+      >Classification Code:
+      <input list="set_aside_list" id="set_aside" name="set_aside" />
+    </label>
+    <label
+      >Notice Type:
+      <input list="set_aside_list" id="set_aside" name="set_aside" />
+    </label>
+  </div>
+    <button type="submit">Save</button>
+  </form>
 <datalist id="date">
   <option value="Last 30 days"></option>
   <option value="Last 90 days"></option>
