@@ -1,4 +1,4 @@
-$primary-color: rgb(254, 188, 14);
+$primary-color: rgb(242, 170, 36);
 $black-adjacent: rgb(37, 37, 37);
 
 body {
@@ -7,14 +7,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("../assets/katie-moum-623907-unsplash.jpg");
+  background-repeat: no-repeat;
   //   min-height: 100vh;
 }
 header {
-  background-color: $black-adjacent;
-  color: $primary-color;
-  padding-bottom: 40px;
+  background-color: $primary-color;
+  color: $black-adjacent;
   width: 100%;
-  //   font-size: 28px;
 }
 .nav-content {
   display: flex;
@@ -25,14 +25,14 @@ a {
   padding-left: 35px;
   padding-right: 10px;
   text-decoration: none;
-  color: $primary-color;
+  color: $black-adjacent;
 }
 a:hover {
   color: white;
 }
 footer {
   margin-top: 565px;
-  background-color: $black-adjacent;
-  color: $primary-color;
+  background-color: $primary-color;
+  color: $black-adjacent;
   width: 100%;
 }

@@ -10,11 +10,12 @@
     />
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/search.css" rel="stylesheet" />
+    <link href="../static/css/homepage.css" rel="stylesheet" />
     <title>Hackathon App</title>
   </head>
   <body>
     <header>
-      <h3>Vendor Helper</h3>
+      <h3>VendorHelper</h3>
       <div class="nav-content">
         <a href="/">
           <p>Home</p>
@@ -32,9 +33,14 @@
           <li class="divider"></li>
           <li>CIA</li>
         </ul>
+        <a href="#">
+          <p>FAQ</p>
+        </a>
       </div>
     </header>
-    {% block content %} {% endblock %}
+    <div class="bg-img">
+      {% block content %} {% endblock %}
+    </div>
     <footer>
       <h4>Other stuff here</h4>
     </footer>

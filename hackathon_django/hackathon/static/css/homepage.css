@@ -1,0 +1,15 @@
+a.button {
+  margin: 80px;
+  border: 1px solid black;
+  background-color: #f2aa24;
+  border-radius: 6px;
+  width: 150px;
+  height: 70px;
+  font-size: 18px;
+  color: white;
+}
+
+p.home {
+  width: 300px;
+}
+/*# sourceMappingURL=homepage.css.map */

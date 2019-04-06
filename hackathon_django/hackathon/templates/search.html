@@ -7,7 +7,9 @@
     >Keyword/Solicitation #:
     <input type="text" placeholder="Search Here" name="keyword" />
   </label>
-  <label>Posted Date: <input type="date" name="post_date" /> </label>
+  <label
+    >Posted Date: <input list="date" id="post_date" name="post_date" />
+  </label>
   <label
     >Set Aside:
     <input list="set_aside_list" id="set_aside" name="set_aside" />
@@ -26,6 +28,10 @@
   </label>
   <button type="submit">Save</button>
 </form>
+<datalist id="date">
+  <option value="Last 30 days"></option>
+  <option value="Last 90 days"></option>
+</datalist>
 <datalist id="set_aside_list">
   <option value="One"></option>
   <option value="Two"></option>
