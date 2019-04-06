@@ -7,12 +7,20 @@
     >Keyword/Solicitation #:
     <input type="text" placeholder="Search Here" />
   </label>
-  <label>Posted Date:</label>
-  <label>Set Aside:</label>
+  <label>Posted Date: <input type="date" /> </label>
+  <label
+    >Set Aside:
+    <input list="set-aside-list" id="set-aside" name="set-aside" />
+  </label>
   <label>NAICS:</label>
   <label>Classification Code:</label>
   <label>Notice Type:</label>
   <button type="submit">Save</button>
 </form>
-
+<datalist id="set-aside-list">
+  <option value="One"></option>
+  <option value="Two"></option>
+  <option value="Three"></option>
+  <option value="Four"></option>
+</datalist>
 {%endblock%}
