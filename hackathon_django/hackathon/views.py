@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 def homepage(request):
@@ -8,3 +8,4 @@ def search_page(request):
 
 def search_result(request, id):
     return render(request, "search_result.html")
+    #write a redirect function with the POST from the form

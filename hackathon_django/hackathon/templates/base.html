@@ -4,15 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="../static/css/main.css" rel="stylesheet" />
     <title>Hackathon App</title>
   </head>
   <body>
     <header>
-      <h1>Stuff here</h1>
+      <h1>Vendor Helper</h1>
+      <div class="nav-content">
+        <a href="/">
+          <h3>Home</h3>
+        </a>
+        <a href="/search">
+          <h3>Search</h3>
+        </a>
+        <a href="#">
+          <h3 class="dropdown-trigger" data-target="dd1">Agencies</h3>
+        </a>
+        <ul id="dd1" class="dropdown-content">
+          <li>FBI</li>
+          <li class="divider"></li>
+          <li>DOJ</li>
+          <li class="divider"></li>
+          <li>CIA</li>
+        </ul>
+      </div>
     </header>
     {% block content %} {% endblock %}
     <footer>
       <h1>Other stuff here</h1>
     </footer>
+    <script src="../static/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>

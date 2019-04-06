@@ -1,0 +1,33 @@
+$primary-color: rgb(254, 188, 14);
+$black-adjacent: rgb(37, 37, 37);
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: $black-adjacent;
+  color: $primary-color;
+  padding-bottom: 40px;
+}
+.nav-content {
+  display: flex;
+  align-content: space-around;
+  justify-content: flex-end;
+}
+a {
+  padding-left: 35px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: $primary-color;
+}
+a:hover {
+  color: white;
+}
+footer {
+  margin-top: 565px;
+  background-color: $black-adjacent;
+  color: $primary-color;
+}
