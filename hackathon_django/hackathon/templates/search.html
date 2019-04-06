@@ -1,9 +1,35 @@
 {%extends 'base.html'%} {%block content%}
-<h1>Search form here</h1>
+<h4>Search:</h4>
 <form method="POST">
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="text" placeholder="Search Here" />
+  <label
+    >Keyword/Solicitation #:
+    <input type="text" placeholder="Search Here" name="keyword" />
+  </label>
+  <label>Posted Date: <input type="date" name="post_date" /> </label>
+  <label
+    >Set Aside:
+    <input list="set_aside_list" id="set_aside" name="set_aside" />
+  </label>
+  <label
+    >NAICS:
+    <input list="set_aside_list" id="set_aside" name="set_aside" />
+  </label>
+  <label
+    >Classification Code:
+    <input list="set_aside_list" id="set_aside" name="set_aside" />
+  </label>
+  <label
+    >Notice Type:
+    <input list="set_aside_list" id="set_aside" name="set_aside" />
+  </label>
   <button type="submit">Save</button>
 </form>
+<datalist id="set_aside_list">
+  <option value="One"></option>
+  <option value="Two"></option>
+  <option value="Three"></option>
+  <option value="Four"></option>
+</datalist>
 {%endblock%}
