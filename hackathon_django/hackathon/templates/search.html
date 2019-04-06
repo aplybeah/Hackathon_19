@@ -1,9 +1,18 @@
 {%extends 'base.html'%} {%block content%}
-<h1>Search form here</h1>
+
 <form method="POST">
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="text" placeholder="Search Here" />
+  <label
+    >Keyword/Solicitation #:
+    <input type="text" placeholder="Search Here" />
+  </label>
+  <label>Posted Date:</label>
+  <label>Set Aside:</label>
+  <label>NAICS:</label>
+  <label>Classification Code:</label>
+  <label>Notice Type:</label>
   <button type="submit">Save</button>
 </form>
+
 {%endblock%}
