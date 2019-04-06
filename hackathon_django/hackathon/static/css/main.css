@@ -11,7 +11,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-image: url("../assets/katie-moum-623907-unsplash.jpg");
+  background-image: url("../assets/katie-moum-623907-unsplash (1).jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

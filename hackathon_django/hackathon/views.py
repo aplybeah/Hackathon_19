@@ -24,3 +24,14 @@ def redirect_search(request):
 def search_result(request, id):
     return render(request, "search_result.html")
     #write a redirect function with the POST from the form
+
+
+    #dataframe editing function calls two smaller functions on each row of dataframe
+#Parses through the title and body of each post and assigns a score based on occurance number 
+#of each term
+def rank_full(df, search):  
+    df['title_score'] = df['title'].map(lambda x: header_ranking(x, search))
+    df['body_score'] = df['body'].map(lambda y: body_ranking(y, search))   
+    df['total_score'] = df['title_score'] + df['body_score']
+    
+    df = df.sort_values(by=['total_score'], ascending=False, inplace= True)
